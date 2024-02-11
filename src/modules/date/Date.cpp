@@ -210,9 +210,9 @@ unsigned int Date::dayOfWeek()
 
 std::string Date::timezone()
 {
-    int index = rand() % timezoneNames.size() - 1;
-    return timezoneNames[index];
-    // return Helper::arrayElement<std::string>(timezoneNames);
+    // int index = rand() % timezoneNames.size() - 1;
+    // return timezoneNames[index];
+    return Helper::arrayElement<std::string>(timezoneNames);
 }
 
 }
